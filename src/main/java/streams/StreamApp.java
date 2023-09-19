@@ -42,7 +42,7 @@ public class StreamApp {
                 return Collections.singleton(countsStoreBuilder);
             }
         };
-        builder.addSource("Source", "streamApp-input");
+        builder.addSource("Source", "stream-app-input");
                     // add the WordCountProcessor node which takes the source processor as its upstream processor.
                     // the ProcessorSupplier provides the count store associated with the WordCountProcessor
         builder.addProcessor("Process", ps,"Source");
